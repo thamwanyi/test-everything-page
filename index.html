@@ -71,8 +71,7 @@
     /* ── HERO ── */
     .hero {
       min-height: 100vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
       padding-top: 80px;
       position: relative;
       overflow: hidden;
@@ -223,7 +222,7 @@
       line-height: 1.1;
     }
 
-    .work-title em { font-style: italic; color: var(--clay); }
+    .work-title em { font-style: normal; color: var(--clay); }
 
     .work-intro {
       font-size: 1rem;
@@ -358,6 +357,14 @@
       color: var(--cream);
       text-align: center;
       padding: 8rem 5rem;
+    }
+
+    .collaborate-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 4vw, 4rem);
+      line-height: 1.1;
+      color: var(--cream);
+      margin-bottom: 2rem;
     }
 
     .collaborate-statement {
@@ -561,23 +568,17 @@
 <body>
 
   <!-- NAV -->
-  <nav>
-    <div class="nav-logo">For SGN L&amp;S 2026</div>
-  </nav>
+  <nav></nav>
 
   <!-- HERO -->
   <section class="hero" id="top">
     <div class="hero-left">
-      <p class="hero-eyebrow">For SGN L&amp;S 2026</p>
       <h1 class="hero-title">
-        Hello. 👋
+        Hello 👋
       </h1>
       <p class="hero-subtitle">
         Here's a little about what I'm up to, what excites me, and what keeps me going.
       </p>
-    </div>
-    <div class="hero-right">
-      <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=900&q=80" alt="Community collaboration" />
     </div>
   </section>
 
@@ -585,8 +586,7 @@
   <section class="work" id="work">
     <p class="section-label">What I'm working on</p>
     <div class="work-header">
-      <h2 class="work-title">Three threads.<br/><em>One network.</em></h2>
-      <p class="work-intro">My workstreams span understanding, enabling, and growing the SGN community — each piece connecting to the next.</p>
+      <h2 class="work-title">Three <em>threads.</em></h2>
     </div>
     <div class="work-cards">
 
@@ -645,23 +645,17 @@
 
   <!-- COLLABORATE -->
   <section class="collaborate" id="collaborate">
+    <p class="section-label" style="justify-content:center; color:rgba(245,240,232,0.6);">Beyond the office</p>
+    <h2 class="collaborate-heading reveal">Working better together</h2>
     <p class="collaborate-statement reveal">Be direct. Be honest.<br/>Let's go from there.</p>
   </section>
 
   <!-- SEW -->
   <section class="sew" id="sew">
     <div class="sew-top">
-      <div class="sew-images">
-        <img src="https://images.unsplash.com/photo-1604869515882-4d10fa4b0492?w=700&q=80" alt="Sewing and mending" />
-        <img src="https://images.unsplash.com/photo-1591375372226-b4c939d88ccd?w=700&q=80" alt="Textile craft" />
-      </div>
       <div class="sew-content reveal">
         <p class="sew-eyebrow">Beyond the office</p>
         <h2 class="sew-title">Sip &amp; <em>Sew.</em></h2>
-        <div class="sew-tags">
-          <span class="sew-tag">hanging by a thread</span>
-          <span class="sew-tag">jk life is sew good</span>
-        </div>
       </div>
     </div>
     <div class="sew-user-photos">
@@ -677,6 +671,10 @@
           <span>Your photo here</span>
         </div>
       </div>
+    </div>
+    <div class="sew-tags" style="padding: 2rem 5rem;">
+      <span class="sew-tag">hanging by a thread</span>
+      <span class="sew-tag">jk life is sew good</span>
     </div>
   </section>
 
