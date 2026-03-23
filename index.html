@@ -111,13 +111,14 @@
     }
 
     .hero-subtitle {
+      font-family: 'Playfair Display', serif;
       font-size: 1.1rem;
       line-height: 1.7;
       color: var(--muted);
       max-width: 38ch;
       opacity: 0;
       animation: fadeUp 0.8s ease forwards 0.6s;
-      font-weight: 300;
+      font-weight: 400;
     }
 
     .hero-tagline {
@@ -198,6 +199,7 @@
       max-width: 60px;
       height: 1px;
       background: var(--border);
+      display: none;
     }
 
     /* ── WORK SECTION ── */
@@ -383,10 +385,8 @@
     }
 
     .sew-top {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 0;
-      min-height: 70vh;
+      display: block;
+      margin-bottom: 0;
     }
 
     .sew-images {
@@ -404,8 +404,9 @@
     .sew-content {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      padding: 5rem 4rem;
+      justify-content: flex-start;
+      padding: 0;
+      margin-bottom: 3rem;
     }
 
     .sew-eyebrow {
@@ -568,7 +569,9 @@
 <body>
 
   <!-- NAV -->
-  <nav></nav>
+  <nav>
+    <div class="nav-logo">For SGN L&amp;S 2026</div>
+  </nav>
 
   <!-- HERO -->
   <section class="hero" id="top">
@@ -645,7 +648,6 @@
 
   <!-- COLLABORATE -->
   <section class="collaborate" id="collaborate">
-    <p class="section-label" style="justify-content:center; color:rgba(245,240,232,0.6);">Beyond the office</p>
     <h2 class="collaborate-heading reveal">Working better together</h2>
     <p class="collaborate-statement reveal">Be direct. Be honest.<br/>Let's go from there.</p>
   </section>
