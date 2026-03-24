@@ -238,37 +238,32 @@
     .work-cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 1.5px;
+      gap: 2rem;
     }
 
     .work-card {
-      position: relative;
-      overflow: hidden;
-      aspect-ratio: 3/4;
+      display: flex;
+      flex-direction: column;
       cursor: default;
     }
 
     .work-card img {
       width: 100%;
-      height: 100%;
+      aspect-ratio: 4/3;
       object-fit: cover;
-      transition: transform 0.6s ease, filter 0.6s ease;
-      filter: saturate(0.4) brightness(0.6);
+      object-position: center;
+      border-radius: 6px;
+      transition: transform 0.6s ease;
     }
 
     .work-card:hover img {
-      transform: scale(1.04);
-      filter: saturate(0.7) brightness(0.45);
+      transform: scale(1.02);
     }
 
     .work-card-content {
-      position: absolute;
-      inset: 0;
-      padding: 2rem;
+      padding: 1.5rem 0;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      background: linear-gradient(to top, rgba(28,24,18,0.9) 40%, transparent 80%);
     }
 
     .work-card-num {
@@ -283,7 +278,7 @@
       font-size: 0.7rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: rgba(245,240,232,0.5);
+      color: rgba(245,240,232,0.7);
       margin-bottom: 0.6rem;
       line-height: 1.4;
     }
@@ -291,7 +286,7 @@
     .work-card-stream {
       font-family: 'Playfair Display', serif;
       font-size: 1.35rem;
-      line-height: 1.5;
+      line-height: 1.4;
       color: var(--cream);
     }
 
@@ -336,8 +331,9 @@
 
     .excites-photo-item img {
       width: 100%;
-      aspect-ratio: 4/3;
+      aspect-ratio: 16/10;
       object-fit: cover;
+      object-position: center;
       border-radius: 6px;
       filter: saturate(0.85);
       transition: filter 0.4s ease, transform 0.4s ease;
@@ -367,6 +363,7 @@
     .collaborate-heading {
       font-family: 'DM Mono', monospace;
       font-size: 0.7rem;
+      font-weight: 400;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       line-height: 1.1;
@@ -438,7 +435,7 @@
       flex-wrap: wrap;
       gap: 0.5rem;
       margin-top: 1.5rem;
-      margin-bottom: 8rem;
+      margin-bottom: 5.6rem;
     }
 
     .sew-tag {
@@ -458,7 +455,7 @@
     }
 
     .sew-user-photo-slot {
-      aspect-ratio: 4/3;
+      aspect-ratio: 3/4;
       background: rgba(238,238,230,0.08);
       display: flex;
       align-items: center;
@@ -472,6 +469,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
     }
 
     .sew-user-photo-placeholder {
@@ -578,7 +576,7 @@
 
   <!-- NAV -->
   <nav>
-    <div class="nav-logo">For SGN L&amp;S 2026</div>
+    <div class="nav-logo">For SGN Gather 2026</div>
   </nav>
 
   <!-- HERO -->
@@ -602,7 +600,7 @@
     <div class="work-cards">
 
       <div class="work-card reveal">
-        <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=600&q=80" alt="Feedback and listening" />
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7d950f7a-410a-43f1-bc94-0ec603d901a1_420x320-mc5ltQHihotsksJjm3rfaLPPgtM79M.jpg" alt="Feedback Everywhere meme" />
         <div class="work-card-content">
           <p class="work-card-num">01</p>
           <p class="work-card-goal">SGN goal - Build understanding and affinity of members.</p>
@@ -612,7 +610,7 @@
       </div>
 
       <div class="work-card reveal" style="transition-delay:0.15s">
-        <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600&q=80" alt="Events and partnerships" />
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2820%29.jfif-1NDsEhmQoBszvMyviu47fTUQ8s7uxo.jpeg" alt="Networking event" />
         <div class="work-card-content">
           <p class="work-card-num">02</p>
           <p class="work-card-goal">SGN Goal — Enable partners to create, exchange & harness value</p>
@@ -622,10 +620,10 @@
       </div>
 
       <div class="work-card reveal" style="transition-delay:0.3s">
-        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80" alt="Network expansion" />
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/what-does-a-product-manager-do-1702339508.jpeg-B21Wi8ZSWUmXO8MVNsdOL7rurqd5Yb.webp" alt="What does a product manager do meme" />
         <div class="work-card-content">
           <p class="work-card-num">03</p>
-          <p class="work-card-goal">SGN Goal — Broaden & deepen network awareness</p>
+          <p class="work-card-goal">SGN Goal - Broaden and deepen network awareness</p>
           <h3 class="work-card-stream">SG@Home, supporting other Workstreams</h3>
           <span class="work-card-tag">Network Growth</span>
         </div>
@@ -640,11 +638,11 @@
     <h2 class="excites-title reveal">Learning and <em>building things.</em></h2>
     <div class="excites-photo-grid">
       <div class="excites-photo-item reveal">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80" alt="Matching businesses" />
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-03-24%20174644-DXCbQ3MEl3jo0M127Y63f0MrHQCiXi.png" alt="Top picks recommendation engine UI" />
         <p class="excites-photo-caption">Matching businesses via recommendation engine</p>
       </div>
       <div class="excites-photo-item reveal" style="transition-delay:0.15s">
-        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=700&q=80" alt="Automating risk assessments" />
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-03-24%20174824-EczLGqOqtRk3URokgUc8kS0EQGfluJ.png" alt="Risk assessments dashboard" />
         <p class="excites-photo-caption">Automating risk assessments</p>
       </div>
       <div class="excites-photo-item reveal" style="transition-delay:0.3s">
@@ -670,22 +668,13 @@
     </div>
     <div class="sew-user-photos">
       <div class="sew-user-photo-slot">
-        <div class="sew-user-photo-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-          <span>Your photo here</span>
-        </div>
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/photo_6201504468860341909_y-mH1pPlAQeU5bm2eIDePJtHdatoPWDH.jpg" alt="Sip and sew session with orange fabric" />
       </div>
       <div class="sew-user-photo-slot">
-        <div class="sew-user-photo-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-          <span>Your photo here</span>
-        </div>
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/photo_6201504468860341910_y-QFMa99hSswgSzFTcaKf2UkjwZX1wJ9.jpg" alt="Sewing and home baked cookies session" />
       </div>
       <div class="sew-user-photo-slot">
-        <div class="sew-user-photo-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-          <span>Your photo here</span>
-        </div>
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/photo_6201504468860341911_y-c7MQlHdCLTcfBbeOilfK8DuQ7sswTp.jpg" alt="Hello Kitty tote bag creation" />
       </div>
     </div>
     <div class="sew-tags">
